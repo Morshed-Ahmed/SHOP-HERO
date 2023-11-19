@@ -1,0 +1,82 @@
+* {
+  font-family: "montserrat";
+}
+.banner-bg-image {
+  background-image: url("resources/v904-nunny-012 1.png");
+  background-size: cover; /* Adjust the background size as needed */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+/* img {
+  max-width: 100%;
+  height: auto;
+} */
+
+li {
+  list-style: none;
+}
+.feature-res {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.Category {
+  display: grid;
+  gap: 20px;
+}
+.Category-item {
+  background-color: #ededed;
+  padding: 20px;
+  text-align: center;
+}
+.product-card {
+  display: grid;
+  gap: 20px;
+}
+.product-card-item {
+  background-color: #ededed;
+  padding: 20px;
+  text-align: center;
+}
+.Sale {
+  display: flex;
+}
+.footer {
+  display: grid;
+  gap: 20px;
+}
+@media screen and (min-width: 425px) {
+  .feature-res {
+    flex-direction: column;
+  }
+  .Category {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .product-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .Sale {
+    flex-direction: column;
+  }
+  .footer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (min-width: 900px) {
+  .feature-res {
+    flex-direction: row;
+  }
+  .Category {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .product-card {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .Sale {
+    flex-direction: row;
+  }
+  .footer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
